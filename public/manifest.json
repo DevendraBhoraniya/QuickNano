@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+ "name": "AI Rewriter & Explainer",
+  "version": "1.0.0",
+  "description": "Rewrite and explain selected text using Chrome’s built-in AI Rewriter API.",
+"permissions": ["contextMenus", "storage", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
