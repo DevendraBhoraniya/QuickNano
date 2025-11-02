@@ -9,7 +9,13 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+     "default_icon": {
+      "128": "logo.png"
+    }
+  },
+   "icons": {
+    "128": "logo.png"
   },
   "content_scripts": [
     {
